@@ -44,10 +44,23 @@ class MyStateMachine
   int bluePin;
 
   int buzzerPin; // the piezo is connected to analog pin designated by this variable
-  int frequency;
+  int frequency = 1200; // sets the frequency in Hz that the buzzer will sound at. 1200 is pretty much perfect
+                        // in the BOM for this project, I specified using a 2khz active piezo which supposedly only requires 3-5v
+                        // in order to get it to make a 2kHz tone. But I swear when I hooked everything up, 
+                        // the piezo was able to be controlled by the "tone" function which worked as you'd expect it to
+                        // and produced a nice tone at 1,200 Hz  ¯\_(ツ)_/¯
+                        // if you have issues with the Piezo you're using. sorry
   
+  int numberOfBeeps = 3; // the number of times we want the buzzer to beep after countdown is complete
+  int buzzerCounter;
+
   states ActiveState;
   fadeDirection Direction;     // direction to run the pattern
+
+  // this variable sets how many milliseconds to add for each position of the rotary switch (which looks like tick marks from the outside)
+  // one minute is 60,000 millis duh! set this to 30,000 if you want each tick to be 30 second increments
+  // or come up with some logic in the StartCountdown function to decide the number of seconds each tick represents if you wanna get fancy pants
+  const unsigned long tickTimeMultiple = 60000;
   
   unsigned long MillisToCount;
   unsigned long CountdownStartTime;
@@ -65,11 +78,10 @@ class MyStateMachine
   unsigned long ledFadeUpdate;   // milliseconds between updates
   unsigned long ledFadeInterval;
   int LEDFadeIndex;
+  int LEDFadeIndexStepIncrementAmount;
   int TotalLEDFadeSteps;
   
-  int buzzerCount;
-  int numberOfBeeps;
-  int buzzerOnState;
+
   
   //unsigned long lastUpdate; // last update of position
   
@@ -86,10 +98,7 @@ class MyStateMachine
     bluePin = theBluePin;
 
     ActiveState = NONE;
-
-
     buzzerPin = theBuzzerPin;
-    frequency = 1200; // sets the frequency in Hz that the buzzer will sound at. 1200 is pretty much perfect
 
     buzzerOnInterval = 100;  // the number of milliseconds each beep will be "on" for
     buzzerOffInterval = 200; // the number of milliseconds each beep will be "off" for (or pause) between beeping
@@ -97,10 +106,8 @@ class MyStateMachine
     // in order to simplify the logic of how the buzzer turns on and off (and not use the dreaded blocking "delay" function), this additional variable is used to set the 
     // interval that the buzzer is "on" or "off" and is toggled by being set to either "buzzerOnInterval" or "buzzerOffInterval"
     // since the first time the buzzer will sound, it needs to be on, then that means we want it to be set to the "buzzerOnInterval" first
-    buzzerInterval = buzzerOnInterval; 
-    buzzerCount = 0; // the number of times the buzzer has turned on so far
-    numberOfBeeps = 3; // the number of times we want to limit the buzzer to sound
-    
+    buzzerInterval = buzzerOnInterval;
+    buzzerCounter = 0; // the number of times the buzzer has turned on so far    
     buzzerToneBeginTime = 0; // used for the timer logic to know if it's been long enough since the last buzz
 
     Direction = FORWARD;
@@ -125,14 +132,14 @@ class MyStateMachine
                   if((millis() - CountdownStartTime) > MillisToCount){// time to update
                     ActiveState = COUNTDOWN_COMPLETE;
                     buzzerToneBeginTime = millis();
-                    buzzerCount = 0;
+                    buzzerCounter = 0;
                     //setColor(255, 0, 0);  // red
                   }
 
                   break;
               case COUNTDOWN_COMPLETE:
                   //TheaterChaseUpdate();
-                  if(buzzerCount < 6){
+                  if(buzzerCounter < numberOfBeeps*2){
                     BuzzerUpdate();  
                   }
                   
@@ -157,18 +164,27 @@ class MyStateMachine
   {
 
       if((millis() - buzzerToneBeginTime) > buzzerInterval){
-        if((buzzerCount % 2) == 0){
+        if((buzzerCounter % 2 ) == 0){
+          // in the BOM for this project, I specified using a 2khz active piezo which supposedly only requires 3-5v
+          // in order to get it to make a 2kHz tone. But I swear when I hooked everything up, 
+          // the piezo was able to be controlled by the "tone" function which worked as you'd expect it to
+          // and produced a nice tone at 1,200 Hz  ¯\_(ツ)_/¯
+          // if you have issues with the Piezo you're using. sorry
           tone(buzzerPin, frequency);
+          
+          //digitalWrite(buzzerPin, 1);
           //setColor(255, 0, 0);  // red
           buzzerInterval = buzzerOffInterval;
         }
         else{
             noTone(buzzerPin);
+            
+            //digitalWrite(buzzerPin, 1);
             //setColor(255, 0, 0);  // red
             buzzerInterval = buzzerOnInterval;
         }
         buzzerToneBeginTime = millis();
-        buzzerCount++;
+        buzzerCounter++;
       }
     
   }
@@ -235,10 +251,10 @@ class MyStateMachine
 
   void StartCountdown(unsigned long numMinutesToCount)
   {
-
+      // the tickTimeMultiple variable sets how many milliseconds to add for each position of the rotary switch (which looks like tick marks from the outside)
       // one minute is 60,000 millis duh! set this to 30,000 if you want each tick to be 30 second increments
       // or come up with some logic here to decide the number of seconds each tick represents if you wanna get fancy pants
-      MillisToCount = numMinutesToCount * 60000;
+      MillisToCount = numMinutesToCount * tickTimeMultiple;
       CountdownStartTime = millis();
       
       ActiveState = COUNTING_DOWN;
