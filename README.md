@@ -20,7 +20,9 @@ The version I built cost around $60 in parts. All of the components can be purch
 Here's the parts list (aka BOM or Bill of Materials) with links and descriptions of everything you'll need to create your very own Tea Timer V1
 [BOM-aka-parts_list.csv](https://github.com/EfficiencyJunky/TeaTimerV1/blob/master/BOM-aka-parts_list.csv "BOM-aka-parts_list.csv")
 
+Once you have the parts, you will need to do a little bit of Soldering to get them all prepped to plug and play.
 
+The 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjExNTI0LDEyMzA2NTM2ODFdfQ==
+eyJoaXN0b3J5IjpbODM0NzkwNzg3LDEyMzA2NTM2ODFdfQ==
 -->
