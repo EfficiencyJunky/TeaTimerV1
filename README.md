@@ -5,7 +5,7 @@ Of course this is all up for interpretation! Please take this project and modify
 
 For what it's worth though, I will provide documentation on how I built mine in case you want a good a good place to start.
 
-## 
+## See it in action
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDgyOTAwNSwxMjMwNjUzNjgxXX0=
+eyJoaXN0b3J5IjpbLTQ4OTI3NDA3MCwxMjMwNjUzNjgxXX0=
 -->
