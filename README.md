@@ -12,7 +12,11 @@ For some background into why I made this, and a demo of it in action, check out 
 
 
 # Build your own!
-This project is a great way to get your feet wet in DIY product making. It requires only basic knowledge of Arduino, breadboarding, soldering (could do without soldering), and optional 3D Printing.
+This project is a great way to get your feet wet in DIY product making. It requires only basic knowledge of Arduino, breadboarding, soldering (could do without soldering if you get the right components), and optional 3D Printing.
+
+The version I built cost me $60 in parts. All of the components can be purchased on Adafruit.com 
+
+Here's the parts list (aka BOM or Bill of Materials) with everything you'll need to create your very own Tea Timer 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzM3NzU5NSwxMjMwNjUzNjgxXX0=
+eyJoaXN0b3J5IjpbMTI3NDk1Mjc2OSwxMjMwNjUzNjgxXX0=
 -->
