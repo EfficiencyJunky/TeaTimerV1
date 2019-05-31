@@ -22,7 +22,8 @@ Here's the parts list (aka BOM or Bill of Materials) with links and descriptions
 
 Once you have the parts, you will need to do a little bit of Soldering to get them all prepped to plug and play.
 
-The 
+The hardest soldering job will be soldering the Adafruit LiIon/LiPoly Backpack onto the Pro Trinket. They sort of describe how to do this on the product page
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0NzkwNzg3LDEyMzA2NTM2ODFdfQ==
+eyJoaXN0b3J5IjpbLTY3OTQyMjg1NSw4MzQ3OTA3ODcsMTIzMD
+Y1MzY4MV19
 -->
