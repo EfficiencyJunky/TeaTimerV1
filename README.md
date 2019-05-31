@@ -26,8 +26,10 @@ The hardest soldering job will be soldering the Adafruit LiIon/LiPoly Backpack o
 [https://cdn-shop.adafruit.com/970x728/2124-01.jpg](https://cdn-shop.adafruit.com/970x728/2124-01.jpg)
 Of course the switch I have spec'd in the BOM is not the same switch in the picture, but the connections will be the same.
 
-Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED. 
+Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED.
+
+Here's a picture that shows
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDI1NzIyOCw4MzQ3OTA3ODcsMTIzMD
+eyJoaXN0b3J5IjpbMTExMzY1NDY3MCw4MzQ3OTA3ODcsMTIzMD
 Y1MzY4MV19
 -->
