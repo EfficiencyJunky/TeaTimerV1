@@ -6,9 +6,13 @@ Of course this is all up for interpretation! Please take this project and modify
 
 For what it's worth though, I will provide documentation on how I built mine in case you want a good a good place to start.
 
-## See it in action
+# See it in action
 For some background into why I made this, and a demo of it in action, check out my instagram post here:
 [https://www.instagram.com/p/ByHbxj5pm57/](https://www.instagram.com/p/ByHbxj5pm57/)
+
+
+# Build your own!
+This project is a great way to get your feet wet in DIY product 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njc4MzUxMDgsMTIzMDY1MzY4MV19
+eyJoaXN0b3J5IjpbMjAxNDA0OTU1OCwxMjMwNjUzNjgxXX0=
 -->
