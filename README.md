@@ -22,8 +22,10 @@ Here's the parts list (aka BOM or Bill of Materials) with links and descriptions
 
 Once you have the parts, you will need to do a little bit of Soldering to get them all prepped to plug and play.
 
-The hardest soldering job will be soldering the Adafruit LiIon/LiPoly Backpack onto the Pro Trinket. They sort of describe how to do this on the product page, so hopefully it's not too hard to figure that out! Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED.
+The hardest soldering job will be soldering the Adafruit LiIon/LiPoly Backpack onto the Pro Trinket. They sort of describe how to do this on the product page, so hopefully it's not too hard to figure that out! Just make sure to solder a dual header or pair of wires with at least 8 inches to the two 
+
+Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQzNzE3MjQsODM0NzkwNzg3LDEyMz
-A2NTM2ODFdfQ==
+eyJoaXN0b3J5IjpbLTE4MjUwNjQ0NSw4MzQ3OTA3ODcsMTIzMD
+Y1MzY4MV19
 -->
