@@ -24,12 +24,13 @@ Once you have the parts, you will need to do a little bit of Soldering to get th
 
 The hardest soldering job will be soldering the Adafruit LiIon/LiPoly Backpack onto the Pro Trinket. They sort of describe how to do this on the product page, so hopefully it's not too hard to figure that out! Before you solder the Backpack to the Trinket Pro though, be sure to solder a dual header or pair of wires with at least 8 inches to the two holes on the LiIon/LiPoly Backpack that allow you to attach an on/off switch. Here's a picture that shows what I'm talking about
 [https://cdn-shop.adafruit.com/970x728/2124-01.jpg](https://cdn-shop.adafruit.com/970x728/2124-01.jpg)
-Of course the switch I have spec'd in the BOM is not the same switch in the picture, but the connections will be the same. In my build, I soldered a right angle dual header instead of bare wires and avoided soldering to the on/off switch by using one of the Arca
+Of course the switch I have spec'd in the BOM is not the same switch in the picture, but the connections will be the same. In my build, I soldered a right angle dual header instead of bare wires and avoided soldering to the on/off switch by using one of these Arcade Button Quick-Connect Pairs (included in the BOM https://www.adafruit.com/product/1152)
 
 Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED.
 
-Here's a picture that shows
+Here's a picture that shows how I connected all the wires:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc4NTUxNTUsODM0NzkwNzg3LDEyMz
-A2NTM2ODFdfQ==
+eyJoaXN0b3J5IjpbMTAwMjQ2MzI3Myw4MzQ3OTA3ODcsMTIzMD
+Y1MzY4MV19
 -->
