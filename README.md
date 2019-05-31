@@ -12,7 +12,7 @@ For some background into why I made this, and a demo of it in action, check out 
 
 
 # Build your own!
-This project is a great way to get your feet wet in DIY product 
+This project is a great way to get your feet wet in DIY product making. It requires only basic knowledge of Arduino, breadboarding, soldering (could do without soldering), and optional 3D Printing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDA0OTU1OCwxMjMwNjUzNjgxXX0=
+eyJoaXN0b3J5IjpbLTYzMzM3NzU5NSwxMjMwNjUzNjgxXX0=
 -->
