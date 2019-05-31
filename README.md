@@ -29,8 +29,14 @@ Of course the switch I have spec'd in the BOM is not the same switch in the pict
 Besides that, the only other soldering jobs will be connecting wires to terminals on the On/Off switch, 8 Position Rotary Switch, and Button with RGB LED.
 
 Here's a picture that shows how I connected all the wires:
+![Wire Connections 1](https://github.com/EfficiencyJunky/TeaTimerV1/blob/master/Images/WireConnections_1.jpg?raw=true)
 
+I know it's probably not the easiest to follow, but it's all I got for now.
+
+I'll be adding an entire schematic to make this all a lot easier as soon as I can.
+
+For now, I need to go to sleep!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjQ2MzI3Myw4MzQ3OTA3ODcsMTIzMD
-Y1MzY4MV19
+eyJoaXN0b3J5IjpbLTEwMTE0MTc5NTIsMTAwMjQ2MzI3Myw4Mz
+Q3OTA3ODcsMTIzMDY1MzY4MV19
 -->
